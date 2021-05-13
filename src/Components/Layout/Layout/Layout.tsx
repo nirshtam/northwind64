@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Home } from "../../Home/Home/Home";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
@@ -11,7 +12,9 @@ class Layout extends Component {
       <div className="layout-container">
         <Header />
         <Menu />
-        <Main />
+        <Main>
+          <Home />
+        </Main>
         <Footer />
       </div>
     )

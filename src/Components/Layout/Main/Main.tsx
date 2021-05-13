@@ -1,10 +1,14 @@
+import { ReactNode } from 'react';
 import './Main.css';
 
-export default function Main() {
-  const page = "Main";
+type MainProps = {
+  children: ReactNode;
+}
+
+export default function Main(props: MainProps): JSX.Element {
   return (
     <main>
-      Welcome to the {page} page
+      {props.children}
     </main>
   )
 }
