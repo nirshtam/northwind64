@@ -1,0 +1,6 @@
+header {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

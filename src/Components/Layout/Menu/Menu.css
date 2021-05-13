@@ -1,0 +1,15 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(161, 252, 254);
+}
+
+aside > nav {
+  display: flex;
+  flex-direction: column;
+}
+
+aside > nav > .nav-item {
+  margin: 15px 0;
+}

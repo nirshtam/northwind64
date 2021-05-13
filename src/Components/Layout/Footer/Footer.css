@@ -1,0 +1,8 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: smaller;
+  background-color: deeppink;
+  color: aliceblue;
+}
