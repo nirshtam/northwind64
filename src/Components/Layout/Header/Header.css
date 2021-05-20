@@ -1,6 +1,9 @@
 header {
-  background-color: bisque;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+}
+
+header h1 {
+  flex-grow: 1;
 }

@@ -2,7 +2,6 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(161, 252, 254);
 }
 
 aside > nav {
