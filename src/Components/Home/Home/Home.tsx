@@ -2,6 +2,7 @@ import Discount from '../Discount/Discount';
 import Specials from '../Specials/Specials';
 import Desserts from '../Desserts/Desserts';
 import './Home.css';
+import Sales from '../Sales/Sales';
 
 export function Home(): JSX.Element {
   return (
@@ -12,7 +13,12 @@ export function Home(): JSX.Element {
       {/* Conditional Rendering */}
       <Specials />
 
+      {/* Displaying List */}
       <Desserts />
+
+      {/* Props */}
+      <Sales percent={30} />
+      <Sales percent={50} category="Shoes" />
     </div>
   )
 }
