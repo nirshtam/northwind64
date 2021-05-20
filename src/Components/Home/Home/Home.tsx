@@ -6,6 +6,7 @@ import Recommand from '../Recommand/Recommand';
 import './Home.css';
 import Location from '../Location/Location';
 import BestSeller from '../BestSeller/BestSeller';
+import RandomProduct from '../RandomProduct/RandomProduct';
 
 export function Home(): JSX.Element {
   return (
@@ -29,6 +30,8 @@ export function Home(): JSX.Element {
 
       {/* State */}
       <BestSeller />
+
+      <RandomProduct />
     </div>
   )
 }
