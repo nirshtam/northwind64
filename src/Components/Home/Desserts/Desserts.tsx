@@ -6,7 +6,6 @@ export default function Desserts() {
     { id: 2, name: "Chuclate Cake" },
     { id: 3, name: "Malabi" }
   ];
-  console.log(items);
 
   return (
     <div className="desserts box">
