@@ -5,6 +5,7 @@ import Sales from '../Sales/Sales';
 import Recommand from '../Recommand/Recommand';
 import './Home.css';
 import Location from '../Location/Location';
+import BestSeller from '../BestSeller/BestSeller';
 
 export function Home(): JSX.Element {
   return (
@@ -25,6 +26,9 @@ export function Home(): JSX.Element {
       {/* Events */}
       <Recommand />
       <Location />
+
+      {/* State */}
+      <BestSeller />
     </div>
   )
 }
