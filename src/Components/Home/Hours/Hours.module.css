@@ -1,0 +1,12 @@
+.hours {
+  background-image: linear-gradient(magenta, darkmagenta);
+}
+
+.coolText {
+  background-color: green;
+  color: white;
+}
+
+.hours > p {
+  font-size: smaller;
+}
