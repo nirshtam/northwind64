@@ -11,6 +11,7 @@ import { Component } from "react";
 import Search from "../Search/Search";
 import Address from "../Address/Address";
 import Hours from "../Hours/Hours";
+import HugeSeller from "../HugeSeller/HugeSeller";
 
 interface HomeState {
     counter: number;
@@ -48,13 +49,13 @@ class Home extends Component<{}, HomeState> {
         <BestSeller />
 
         <div>
+            {this.state.counter % 2 === 0 && (
+                <RandomProduct />
+            )}
             <p>
-                {this.state.counter % 2 === 0 && (
-                    <RandomProduct />
-                )}
                 <button onClick={() => this.setState({ counter: this.state.counter + 1 })}>Increase Counter</button>
-                <p>Counter: {this.state.counter}</p>
             </p>
+            <p>Counter: {this.state.counter}</p>
         </div>
 
         {/* Two-way Binding */}
@@ -63,6 +64,9 @@ class Home extends Component<{}, HomeState> {
         <Address />
 
         <Hours />
+
+        {/* useState */}
+        <HugeSeller />
       </div>
     );
   }

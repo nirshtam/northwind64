@@ -12,3 +12,8 @@ aside > nav {
 aside > nav > .nav-item {
   margin: 15px 0;
 }
+
+aside > nav > .nav-item.active {
+  font-weight: bold;
+  color: chartreuse;
+}

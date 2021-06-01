@@ -1,14 +1,10 @@
-import { ReactNode } from 'react';
+import Routing from '../Routing/Routing';
 import './Main.css';
 
-type MainProps = {
-  children: ReactNode;
-}
-
-export default function Main(props: MainProps): JSX.Element {
+export default function Main(): JSX.Element {
   return (
-    <main>
-      {props.children}
+    <main className="main-container">
+      <Routing />
     </main>
   )
 }

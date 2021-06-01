@@ -29,8 +29,6 @@ export default class RandomProduct extends Component<{}, RandomProductState> {
 
   // componentDidUpdate - Object has been updated
   public componentDidUpdate(): void {
-    console.log('componentDidUpdate');
-    console.log(this.timerId);
   }
 
   // componentWillUnmount - The componenet is about to be destroyed.

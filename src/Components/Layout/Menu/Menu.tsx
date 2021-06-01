@@ -1,14 +1,23 @@
-import './Menu.css';
+import { NavLink } from "react-router-dom";
+import "./Menu.css";
 
 export default function Menu() {
   return (
     <aside>
       <nav>
-        <a className="nav-item">Home</a>
-        <a className="nav-item">Products</a>
-        <a className="nav-item">About</a>
-        <a className="nav-item">Contact Us</a>
+        <NavLink to="/" className="nav-item" activeClassName="current">
+          Home
+        </NavLink>
+        <NavLink to="/products" className="nav-item">
+          Products
+        </NavLink>
+        <NavLink to="/about" className="nav-item">
+          About
+        </NavLink>
+        <NavLink to="/contact-us" className="nav-item">
+          Contact Us
+        </NavLink>
       </nav>
     </aside>
-  )
+  );
 }
